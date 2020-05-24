@@ -1,0 +1,4 @@
+*1.git push origin dev2-clone : dev2
+   error: src refspec dev2 does not match any.
+   error: 无法推送一些引用到 'https://github.com/myself3073/learngit-deepin.git'
+出现这个问题是因为版本库没有空的，你需要add,commit后再push就可以啦
