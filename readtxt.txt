@@ -33,6 +33,7 @@ git fetch是将远程主机的最新内容拉到本地，用户在检查了以�
 取回更新后，会返回一个FETCH_HEAD ，指的是某个branch在服务器上的最新状态，
 我们可以在本地通过它查看刚取回的更新信息：git log -p FETCH_HEAD
 *git pull <远程主机名> <远程分支名>：<本地分支名>
+*git push <远程主机名> <本地分支名>:<远程分支名> //可有参数 -u
 git pull 可理解为：
 git fetch origin master //从远程主机的master分支拉取最新内容
 git merge FETCH_HEAD // 将拉取下来的最新内容合并到当前所在的分支中
