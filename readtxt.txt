@@ -67,4 +67,7 @@ v2.3*解决冲突*
 >>>>>>> dev2-clone_branch1
 解析：
 上面九行是dev2-clone和dev2-clone_branch1两个不同分支在commit操作之后，git merge发生合并冲突，标出的不同(用git diff或git status也可查看)；
-git merge后(若有冲突，两个分支进入一个状态)修改冲突部分，进行add和commit操作完成合并 
+git merge后(若有冲突，两个分支进入一个状态)修改冲突部分，进行add和commit操作完成合并。
+-------------------------------------------------------------------
+v2.4*删除远程分支*
+*git branch -d -r <branchname>或git push origin --delete <branchname>
