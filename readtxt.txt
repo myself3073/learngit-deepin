@@ -40,7 +40,9 @@ git merge FETCH_HEAD // 将拉取下来的最新内容合并到当前所在的�
 git diff FETCH_HEAD //将拉取下来的内容与当前分支比较
 ------------------------------------------------------------------
 v2.2*dev2-clone**分支管理*
-git branch //查看本地所有分支 
+git branch //查看本地所有分支
+
+git checkout -b <branchname> //创建新分支并切换到该分支 
 
 git branch -r //查看远程所有分支
 
@@ -54,4 +56,6 @@ git branch -d -r <branchname> //删除远程分支，删除后还需推送到服
 git push origin:<branchname>  //删除后推送至服务器
 
 git branch -m <oldbranch> <newbranch> //重命名本地分支
-
+---------------------------------------------------------------------
+v2.3*解决冲突*
+这是一句话+haha
