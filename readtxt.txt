@@ -24,3 +24,16 @@ v1.9*因为之前的push或clone是用https不是ssh,所以每次push都要输�
 ---------------------------------
 v2.0*之前v1.*版本先有本地库后有远程库，从这里开始反过来
 git clone 远程库地址 远程库分支 到本地分支名 
+---------------------------------
+v2.1*git pull=git fetch  + git merge*
+git fetch是将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。
+而git pull 则是将远程主机的最新内容拉下来后直接合并，即：git pull = git fetch + git merge
+，这样可能会产生冲突，需要手动解决。
+*git fetch <远程主机名> <分支名>//将远程主机（分支)的更新全部取回本地
+取回更新后，会返回一个FETCH_HEAD ，指的是某个branch在服务器上的最新状态，
+我们可以在本地通过它查看刚取回的更新信息：git log -p FETCH_HEAD
+*git pull <远程主机名> <远程分支名>：<本地分支名>
+git pull 可理解为：
+git fetch origin master //从远程主机的master分支拉取最新内容
+git merge FETCH_HEAD // 将拉取下来的最新内容合并到当前所在的分支中
+git diff FETCH_HEAD //将拉取下来的内容与当前分支比较
