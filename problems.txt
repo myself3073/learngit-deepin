@@ -2,3 +2,9 @@
    error: src refspec dev2 does not match any.
    error: 无法推送一些引用到 'https://github.com/myself3073/learngit-deepin.git'
 出现这个问题是因为版本库没有空的，你需要add,commit后再push就可以啦
+--------------------------------------------
+*2.问题：
+如果我们git clone的下载代码的时候是连接的https://而不是git@git (ssh)的形式，当我们操作git pull/push到远程的时候，总是提示我们输入账号和密码才能操作成功，频繁的输入账号和密码会很麻烦
+解决方法：
+git config --global credential.helper store	(然后你会在你本地生成一个文本，上边记录你的账号和密码。当然这些你可以不用关心。然后你使用上述的命令配置好之后，再操作一次git pull，
+然后它会提示你输入账号密码，这一次之后就不需要再次输入密码了) 
