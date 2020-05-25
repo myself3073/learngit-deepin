@@ -18,6 +18,7 @@ v1.8*删除文件*
 git checkout -- <file>
 ---------------------------------
 v1.9*因为之前的push或clone是用https不是ssh,所以每次push都要输入账号和密码，所以解决方法：git config --global credential.helper store
+<<<<<<< HEAD
 要关联一个远程库，使用命令git remote add origin git@server-name:path/repo-name.git；
 
 关联后，使用命令git push -u origin master第一次推送master分支的所有内容;
@@ -71,3 +72,5 @@ git merge后(若有冲突，两个分支进入一个状态)修改冲突部分，
 -------------------------------------------------------------------
 v2.4*删除远程分支*
 *git branch -d -r <branchname>或git push origin --delete <branchname>
+=======
+>>>>>>> b97ef32b5ca820b89ec24bafcae88350d6b9abf6
